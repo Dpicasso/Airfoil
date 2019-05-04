@@ -25,3 +25,9 @@
   
 ![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/airfoil%20sketch.JPG)
 ![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/airfoilsketchzoomedout.JPG)
+
+  Images of the mesh. I created a more fine mesh within the inside circle close to the airfoil. This was so values will be more accurate since that is where the caluclations will take place. Using the student version I was limited to how many nodes and elements I was able to have, so having a more fine of a mesh on the inside was more important for calculations.
+  
+![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/meshout.JPG)
+![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/meshout.JPG)
+![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/inflation.JPG)
