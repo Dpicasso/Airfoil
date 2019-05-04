@@ -21,6 +21,10 @@
   The last step is the statistical analysis. Taking the lift coefficeint data from Fluent I can import and process the data in python. We first want to pre process the data first. This will make the columns have zer mean and unit varience. The data will be centered at zero and the scales of the values will not be scattered. We then apply a linear model with multiple polynomial terms. Using a set of training data and test data and see how well our model can predict the lift coefficient with a given angle of attack values.
  
 # Results
+
+![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/Newanimationpress_Slomo.mp4)
+![Alt text]
+
   Sketches of the airfoil and its volume in design modeler
   
 ![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/airfoil%20sketch.JPG)
