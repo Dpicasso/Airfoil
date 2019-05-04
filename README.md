@@ -72,3 +72,7 @@ Model Selection
         plt.ylabel("Lift Codefficient")
         plt.legend
 ![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/linearmodel.JPG) 
+
+# Conclusion
+
+  I beleive I did make a good linear model that can predict lift coefficient with a given angle of attack with this specific style of airfoil. This model is a close match but definitely not perfect. I would use this mmodel if I was trying to find out the value within a fairly large error. I would not use this model if I needed to be accurate since the CV value is 1.87. It shoul dbe a lot lower if this was a model you would be using for important research. This couild also not be a correct model. I did have to rush on creating my model. The dynamic mesh in Fluent took an extremely long time. I could not get the dynamic mesh to transition correctly and when I did I would rotate too fast or too slow. Since Fluent was my main source of data there was nothing I can do until I finished with a correct mesh.
