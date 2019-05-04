@@ -21,8 +21,13 @@
   The last step is the statistical analysis. Taking the lift coefficeint data from Fluent I can import and process the data in python. We first want to pre process the data first. This will make the columns have zer mean and unit varience. The data will be centered at zero and the scales of the values will not be scattered. We then apply a linear model with multiple polynomial terms. Using a set of training data and test data and see how well our model can predict the lift coefficient with a given angle of attack values.
  
 # Results
+Velocity Contour as Angle of Attack increases
 
 ![](https://github.com/Dpicasso/Airfoil/blob/master/Newanimationvel_Slomo.gif)
+
+Pressure Coefficient Contour as Angle of Attack Increases
+
+![](https://github.com/Dpicasso/Airfoil/blob/master/Newanimationpress_Slomo.gif)
 
   Sketches of the airfoil and its volume in design modeler
   
