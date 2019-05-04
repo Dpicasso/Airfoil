@@ -19,3 +19,7 @@
   The next step was to create a mesh around the airfoil. Since a dynamic mesh is needed to simulate the airfoil rotating two mesh faces were used. The inner mesh will be passive as the outer mesh will be deforming. The most difficult part of this simmulation was creating the dynamic mesh. There were recources to look online, but every person seemed to do it their own way. Through a lot of trial and error I was able to create a mesh that rotated from 0 degrees to 20 degrees. I used Ansys to calculate lift coefficients and record the values for each of the 100 time steps. 
   
   The last step is the statistical analysis. Taking the lift coefficeint data from Fluent I can import and process the data in python. We first want to pre process the data first. This will make the columns have zer mean and unit varience. The data will be centered at zero and the scales of the values will not be scattered. We then apply a linear model with multiple polynomial terms. Using a set of training data and test data and see how well our model can predict the lift coefficient with a given angle of attack values.
+  
+# Results
+
+![Alt text](relative/path/to/img.jpg?raw=true "airfoil sketch")
