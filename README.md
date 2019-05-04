@@ -31,3 +31,44 @@
 ![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/meshout.JPG)
 ![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/meshin.JPG)
 ![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/inflation.JPG)
+
+Model Selection
+
+  I chose a polynomial model to represent the lift coefficients. The data that I recieved look parabolic, so I will go with a second order polynomial
+  
+  from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import PolynomialFeatures
+
+degrees = [2]
+scores = np.zeros((len(degrees),ncv))
+error = np.zeros(len(degrees))
+
+fig = plt.figure(figsize = (16,5))
+
+for i in range(len(degrees)):
+    
+    polynomial = PolynomialFeatures(degree = degrees[i], include_bias = True, interaction_only = True)
+    
+    lin_reg = LinearRegression(fit_intercept = False)
+    
+    pipeline = Pipeline([("Polynomial Features", polynomial), ("Linear OLS", lin_reg)])
+    
+    pipeline.fit(x_train, y_train)
+    yhat = pipeline.predict(x_train)
+    
+    scores[i] = cross_val_score(pipeline, x_train, y_train, scoring = "neg_mean_squared_error", cv = ncv)
+    
+    error[i] = ((yhat - y_train)**2).sum()
+    
+    n = yhat.shape[0]
+    ax = plt.subplot(1, len(degrees), i + 1)
+    plt.setp(ax, xticks = (), yticks = ())
+    plt.scatter(y_train, yhat, label = "Linear" + str(degrees[i]) + "deg OLS", clip_on = False)
+    plt.title("CV avg Score: {:.3}\nAIC = {:.2e}\nBIC = {:.2e}".format(abs(scores[i,].mean()), 2 * polynomial.n_output_features_ + n * np.log(error[i] / n), np.log(y_train.shape[0])*polynomial.n_output_features_+ n*np.log(error[i]/n) ))
+    plt.xlim((min(y_train), max(y_train)))
+    plt.ylim((min(yhat), max(yhat)))
+    plt.plot(range(100000), label = "perfect prediction")
+    plt.xlabel("Theta")
+    plt.ylabel("Lift Codefficient")
+    plt.legend
+
