@@ -36,8 +36,8 @@ Model Selection
 
   I chose a polynomial model to represent the lift coefficients. The data that I recieved look parabolic, so I will go with a second order polynomial
   
-  from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import PolynomialFeatures
+    from sklearn.pipeline import Pipeline
+    from sklearn.preprocessing import PolynomialFeatures
 
     degrees = [2]
     scores = np.zeros((len(degrees),ncv))
@@ -71,4 +71,4 @@ from sklearn.preprocessing import PolynomialFeatures
         plt.xlabel("Theta")
         plt.ylabel("Lift Codefficient")
         plt.legend
-
+![Alt text]
