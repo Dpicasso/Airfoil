@@ -22,4 +22,4 @@
   
 # Results
 
-![Alt text](relative/path/to/img.jpg?raw=true "airfoil sketch")
+![Alt text](relative/path/to/airfoil sketch.jpg?raw=true "airfoil sketch")
