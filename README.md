@@ -22,4 +22,4 @@
   
 # Results
 
-![Alt text](relative/path/to/inflation.jpg?raw=true "airfoil sketch")
+![Alt text](Dpicasso/Airfoil/blob/master/airfoil%20sketch.JPG)
