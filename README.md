@@ -22,4 +22,4 @@
   
 # Results
 
-![Alt text](Dpicasso/Airfoil/blob/master/airfoil%20sketch.JPG)
+![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/airfoil%20sketch.JPG)
