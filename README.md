@@ -22,8 +22,7 @@
  
 # Results
 
-![Alt text](https://github.com/Dpicasso/Airfoil/blob/master/Newanimationpress_Slomo.mp4)
-![Alt text]
+![](https://github.com/Dpicasso/Airfoil/blob/master/Newanimationvel_Slomo.gif)
 
   Sketches of the airfoil and its volume in design modeler
   
